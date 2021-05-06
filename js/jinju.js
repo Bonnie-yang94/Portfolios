@@ -1,6 +1,6 @@
 
 // 일기예보
-$.getJSON('http://api.openweathermap.org/data/2.5/weather?q=Jinju&appid=3ee9a36c086379642549c1eeb6cbe511&units=metric', function (result) {
+$.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Jinju&appid=3ee9a36c086379642549c1eeb6cbe511&units=metric', function (result) {
   $('.ctemp').append(result.main.temp + '˚' + 'C');
   var wiconUrl = '<img src="image/wheater/' + result.weather[0].icon + '.svg" width="90px" height="90px" alt="' + result.weather[0].description + '">'
   $('.icon').html(wiconUrl);
